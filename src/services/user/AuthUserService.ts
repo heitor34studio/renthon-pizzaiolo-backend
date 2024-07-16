@@ -1,6 +1,7 @@
 import prismaClient from "../../prisma";
 import {compare} from 'bcryptjs'
 import {sign} from 'jsonwebtoken'
+import { JWT_SECRET } from "../../config";
 
 interface AuthRequest{
     email: string;
@@ -30,7 +31,7 @@ class AuthUserService{
                 name:user.name,
                 email:user.email
             },
-            process.env.JWT_SECRET,
+            JWT_SECRET,
             {
                 subject: user.id,
                 expiresIn: '30d'
