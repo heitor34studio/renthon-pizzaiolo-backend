@@ -18,7 +18,7 @@ A parte do Backend do RenthonPizzaiolo implementa uma API RESTful que serve para
 
 ## 🔨 Funcionalidades do projeto
 
-O API do ForumHub oferece as seguintes funcionalidades:
+O API do Renthon Pizzaiolo oferece as seguintes funcionalidades:
 
 - Criação, detalhamento, e login de Usuários.
 - Criação e listagem de Categorias.
